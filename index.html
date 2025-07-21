@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postonauten - Ihre intergalaktische Logistiklösung</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* Dark blue-gray for space theme */
+            color: #e2e8f0; /* Light text color */
+        }
+        .hero-background {
+            background-image: url('https://placehold.co/1920x1080/1a202c/e2e8f0?text=Intergalaktische+Lieferung'); /* Placeholder for a space background image */
+            background-size: cover;
+            background-position: center;
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #8b5cf6, #ec4899); /* Purple to pink gradient */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .sparkle-button {
+            position: relative;
+            overflow: hidden;
+        }
+        .sparkle-button::before {
+            content: '✨';
+            position: absolute;
+            top: 50%;
+            left: -20px;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: all 0.5s ease-out;
+        }
+        .sparkle-button:hover::before {
+            left: 10px;
+            opacity: 1;
+        }
+        .sparkle-button::after {
+            content: '✨';
+            position: absolute;
+            top: 50%;
+            right: -20px;
+            transform: translateY(-50%);
+            opacity: 0;
+            transition: all 0.5s ease-out;
+        }
+        .sparkle-button:hover::after {
+            right: 10px;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <!-- Header Section -->
+    <header class="bg-gray-900 bg-opacity-70 text-white p-4 shadow-lg sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-3xl font-bold gradient-text">Postonauten</a>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="hover:text-purple-400 transition duration-300">Über uns</a></li>
+                <li><a href="#services" class="hover:text-purple-400 transition duration-300">Unsere Dienste</a></li>
+                <li><a href="#diversity" class="hover:text-purple-400 transition duration-300">Vielfalt</a></li>
+                <li><a href="#optimize-description" class="hover:text-purple-400 transition duration-300">Beschreibung optimieren</a></li>
+                <li><a href="#contact" class="hover:text-purple-400 transition duration-300">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-background h-screen flex items-center justify-center text-center px-4">
+        <div class="bg-black bg-opacity-60 p-8 md:p-12 rounded-2xl shadow-2xl max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6 gradient-text">
+                Ihre Fracht, unser Universum.
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-8">
+                Die Postonauten liefern Ihre Pakete mit Lichtgeschwindigkeit und unübertroffener Zuverlässigkeit – von der Erde bis zum entferntesten Stern.
+            </p>
+            <a href="#services" class="bg-purple-600 hover:bg-purple-700 text-white font-bold py-4 px-8 rounded-full text-lg md:text-xl transition duration-300 transform hover:scale-105 shadow-lg">
+                Jetzt intergalaktisch versenden!
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-gray-800 text-center px-4">
+        <div class="container mx-auto max-w-3xl">
+            <h2 class="text-4xl font-bold mb-8 text-purple-400">Wer sind die Postonauten?</h2>
+            <p class="text-lg text-gray-300 leading-relaxed">
+                Wir sind die Pioniere der interstellaren Logistik. Gegründet auf dem Prinzip, dass keine Entfernung zu groß und keine Herausforderung zu komplex ist, verbinden die Postonauten Welten. Unser Team aus engagierten Menschen und hochentwickelten Alien-Spezialisten arbeitet Hand in Hand, um sicherzustellen, dass Ihre Sendungen sicher, pünktlich und unversehrt ankommen – egal wo im Kosmos.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-gray-900 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12 text-purple-400">Unsere interstellaren Dienste</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service Card 1: Lichtgeschwindigkeit -->
+                <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-6xl mb-4 text-center text-yellow-400">🚀</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-center text-pink-400">Lichtgeschwindigkeits-Lieferung</h3>
+                    <p class="text-gray-300 text-center">
+                        Dank unserer fortschrittlichsten Antriebstechnologien erreichen Ihre Pakete ihr Ziel mit der schnellstmöglichen Geschwindigkeit, die das Universum zu bieten hat. Keine Verzögerungen, nur pure Effizienz.
+                    </p>
+                </div>
+                <!-- Service Card 2: Zuverlässigkeit -->
+                <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-6xl mb-4 text-center text-green-400">✅</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-center text-pink-400">Unübertroffene Zuverlässigkeit</h3>
+                    <p class="text-gray-300 text-center">
+                        Jede Sendung wird mit größter Sorgfalt behandelt. Unsere robusten Sicherheitsprotokolle und erfahrenen Kuriere garantieren, dass Ihre Waren intakt und wie versprochen ankommen.
+                    </p>
+                </div>
+                <!-- Service Card 3: Universelle Abdeckung -->
+                <div class="bg-gray-800 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-2">
+                    <div class="text-6xl mb-4 text-center text-blue-400">🌌</div>
+                    <h3 class="text-2xl font-semibold mb-4 text-center text-pink-400">Universelle Abdeckung</h3>
+                    <p class="text-gray-300 text-center">
+                        Von den belebten Märkten des Mars bis zu den eisigen Monden von Kepler-186f – unser Netzwerk erstreckt sich über Galaxien, um jeden Winkel des Kosmos zu erreichen.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diversity Section -->
+    <section id="diversity" class="py-16 bg-gray-800 text-center px-4">
+        <div class="container mx-auto max-w-3xl">
+            <h2 class="text-4xl font-bold mb-8 text-purple-400">Vielfalt ist unsere Stärke</h2>
+            <p class="text-lg text-gray-300 leading-relaxed mb-8">
+                Bei den Postonauten glauben wir fest daran, dass die besten Lösungen aus den unterschiedlichsten Perspektiven entstehen. Unser Team ist eine einzigartige Mischung aus intelligenten Menschen und faszinierenden Alien-Spezies, die jeweils ihre eigenen Stärken und Fähigkeiten in unser Unternehmen einbringen. Diese Vielfalt ist der Schlüssel zu unserer Innovationskraft und unserem Erfolg.
+            </p>
+            <div class="flex justify-center space-x-6 text-5xl">
+                <span>👽</span>
+                <span>🧑‍🚀</span>
+                <span>👾</span>
+                <span>👩‍🔧</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gemini API Feature: Optimize Package Description -->
+    <section id="optimize-description" class="py-16 bg-gray-900 px-4">
+        <div class="container mx-auto max-w-3xl text-center">
+            <h2 class="text-4xl font-bold mb-8 text-purple-400">✨ Paketbeschreibung optimieren ✨</h2>
+            <p class="text-lg text-gray-300 leading-relaxed mb-6">
+                Verleihen Sie Ihrer Sendung einen galaktischen Touch! Geben Sie eine kurze Beschreibung Ihres Pakets ein, und unsere KI generiert eine einzigartige, weltraumtaugliche Version.
+            </p>
+            <div class="bg-gray-800 p-8 rounded-2xl shadow-xl">
+                <textarea id="packageDescriptionInput"
+                          class="w-full h-32 p-4 mb-6 rounded-lg bg-gray-700 text-gray-200 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-purple-500 resize-none"
+                          placeholder="Geben Sie hier eine kurze Beschreibung Ihres Pakets ein (z.B. 'Ein altes Buch', 'Ein Geschenk für meine Tante')..."></textarea>
+                <button id="optimizeButton"
+                        class="sparkle-button bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-full text-lg transition duration-300 transform hover:scale-105 shadow-lg relative">
+                    Beschreibung optimieren
+                </button>
+                <div id="optimizedDescriptionOutput"
+                     class="mt-8 p-6 bg-gray-700 rounded-lg text-gray-200 text-left min-h-[80px] flex items-center justify-center text-lg italic">
+                    Ihre optimierte Beschreibung erscheint hier...
+                </div>
+                <div id="loadingIndicator" class="hidden mt-4 text-purple-400 text-lg">
+                    Optimierung läuft... 🚀
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action / Contact Section -->
+    <section id="contact" class="py-16 bg-gray-900 text-center px-4">
+        <div class="container mx-auto max-w-2xl">
+            <h2 class="text-4xl font-bold mb-8 text-purple-400">Bereit für den intergalaktischen Versand?</h2>
+            <p class="text-xl text-gray-300 mb-10">
+                Kontaktieren Sie uns noch heute, um Ihre nächste Sendung zu planen oder mehr über unsere maßgeschneiderten Logistiklösungen zu erfahren. Die Weiten des Universums warten auf Ihre Pakete!
+            </p>
+            <a href="mailto:info@postonauten.uni" class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-4 px-8 rounded-full text-lg md:text-xl transition duration-300 transform hover:scale-105 shadow-lg">
+                Kontakt aufnehmen
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-400 py-8 text-center">
+        <div class="container mx-auto">
+            <p>&copy; 2025 Postonauten. Alle Rechte vorbehalten. | Eine Division von Universal Logistics Corp.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="#" class="hover:text-white transition duration-300">Datenschutz</a>
+                <a href="#" class="hover:text-white transition duration-300">Impressum</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const packageDescriptionInput = document.getElementById('packageDescriptionInput');
+            const optimizeButton = document.getElementById('optimizeButton');
+            const optimizedDescriptionOutput = document.getElementById('optimizedDescriptionOutput');
+            const loadingIndicator = document.getElementById('loadingIndicator');
+
+            optimizeButton.addEventListener('click', async () => {
+                const userDescription = packageDescriptionInput.value.trim();
+                if (!userDescription) {
+                    optimizedDescriptionOutput.textContent = "Bitte geben Sie eine Beschreibung ein, die optimiert werden soll.";
+                    return;
+                }
+
+                loadingIndicator.classList.remove('hidden');
+                optimizedDescriptionOutput.textContent = ""; // Clear previous output
+
+                try {
+                    let chatHistory = [];
+                    const prompt = `Optimieren Sie die folgende Paketbeschreibung für den intergalaktischen Versand durch die Postonauten. Fügen Sie kreative, weltraumbezogene Details hinzu, die die Einzigartigkeit der Sendung betonen und gleichzeitig die Zuverlässigkeit der Postonauten hervorheben. Die Beschreibung sollte ansprechend, prägnant und in deutscher Sprache sein. Originalbeschreibung: "${userDescription}"`;
+                    chatHistory.push({ role: "user", parts: [{ text: prompt }] });
+
+                    const payload = { contents: chatHistory };
+                    const apiKey = ""; // If you want to use models other than gemini-2.0-flash or imagen-3.0-generate-002, provide an API key here. Otherwise, leave this as-is.
+                    const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
+
+                    const response = await fetch(apiUrl, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(payload)
+                    });
+
+                    const result = await response.json();
+
+                    if (result.candidates && result.candidates.length > 0 &&
+                        result.candidates[0].content && result.candidates[0].content.parts &&
+                        result.candidates[0].content.parts.length > 0) {
+                        const text = result.candidates[0].content.parts[0].text;
+                        optimizedDescriptionOutput.textContent = text;
+                    } else {
+                        optimizedDescriptionOutput.textContent = "Entschuldigung, ich konnte die Beschreibung nicht optimieren. Bitte versuchen Sie es später erneut.";
+                        console.error("Unexpected API response structure:", result);
+                    }
+                } catch (error) {
+                    optimizedDescriptionOutput.textContent = "Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.";
+                    console.error("Error calling Gemini API:", error);
+                } finally {
+                    loadingIndicator.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
