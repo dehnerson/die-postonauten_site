@@ -18,7 +18,7 @@
         }
 
         .hero-background {
-            background-image: url('images/Postonauten_Hero-Image.png');
+            background-image: url('images/Postonauten_Hero-Image.webp');
             background-size: cover;
             background-position: center;
         }
@@ -137,7 +137,11 @@
         <nav class="container mx-auto flex justify-between items-center">
             <!-- Logo and Site Title -->
             <div class="flex items-center space-x-3">
-                <img src="images\Postonauten_Logo.png" alt="Postonauten Logo" class="h-10 w-10 rounded-full">
+                <picture>
+                    <source srcset="images\Postonauten_Logo.webp" type="image/webp">
+                    <img src="images\Postonauten_Logo.png" alt="Postonauten Logo" loading="lazy"
+                        class="h-10 w-10 rounded-full">
+                </picture>
                 <a href="#" class="text-3xl font-bold gradient-text">Postonauten</a>
             </div>
 
